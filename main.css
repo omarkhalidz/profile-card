@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Kumbh Sans", serif;
+}
+.container {
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+img.top {
+  position: absolute;
+  left: -220px;
+  top: -559px;
+  transform: rotate(0deg);
+}
+img.bottom {
+  position: absolute;
+  right: -204px;
+  bottom: -610px;
+}
+.page {
+  width: 320px;
+  height: 355px;
+  z-index: 100;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.page .img {
+  height: 131px;
+  width: 100%;
+}
+.page .img img {
+  height: 100%;
+  width: 100%;
+}
+.page .two {
+  text-align: center;
+  background-color: white;
+  height: 145px;
+  position: relative;
+  border-bottom: 1px solid hsl(0, 0%, 85%);
+}
+.page .two img {
+  margin-top: -48px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.page .two p {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  font-size: 18px;
+}
+.page .two p span {
+  color: hsl(0, 0%, 59%);
+  font-weight: 500;
+}
+.page .two .txt > span {
+  display: block;
+  margin-top: -14px;
+  color: hsl(0, 0%, 59%);
+  font-weight: 500;
+  font-size: 15px;
+}
+.page .three {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  height: 90px;
+}
+
+.page .three div {
+  text-align: center;
+}
+.page .three div span {
+  display: block;
+  margin-bottom: -11px;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+.page .three div p {
+  font-size: 11px;
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+
+@media (max-width: 767px) {
+  img.top {
+    position: absolute;
+    left: -775px;
+    top: -452px;
+    transform: rotate(0deg);
+  }
+  img.bottom {
+    position: absolute;
+    right: -695px;
+    bottom: -467px;
+  }
+}
